@@ -1,0 +1,823 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Qexal - Professional Website Builder </title>
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/Images/favicon.png" />
+
+        <!-- css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+
+        body{
+            font-family: "Open Sans", sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        #navbar{
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        }
+
+        .navbar-nav li{
+            font-size: .9rem;
+            font-weight: 600;
+            margin-right: 1rem;
+        }
+
+        .navbar-collapse>a{
+            font-size: .8rem;
+            font-weight: 700;
+        }
+
+        .navbar-light .navbar-nav li .nav-link.active, .navbar-light .navbar-nav li .nav-link:hover, .navbar-light .navbar-nav li .nav-link:focus {
+            color: #2753ff !important;
+        }
+
+        .bg-gradient-primary {
+            background: linear-gradient(to right, #2753ff 0%, #a369ff 100%);
+        }
+
+        .bg-overlay-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 0;
+        }
+
+        .popularity-badge{
+            background-color: red;
+            rotate: 45deg;
+            position: absolute;
+            overflow: hidden;
+            padding:.4rem 2.5rem;
+            top: 2.2rem;
+            right: -2rem;
+        }
+
+        .price-btn{
+            background-color: #2753ff1f;
+            color: #2753ff;
+        }
+
+        .price-btn:hover{
+            background-color: #2753ff;
+            color: #fff;
+        }
+
+        .team-social-item{
+            bottom: -2rem;
+            background-color: #00000042;
+            max-height: 0;
+            transition: all 700ms ease;
+        }
+
+        .team-members:hover>.team-social-item{
+            bottom: 0;
+            max-height:100%;
+        }
+
+        .blog-badge{
+            font-size: .7rem;
+            padding: .3rem 1rem;
+            text-transform: uppercase;
+            background-color: #d1d9f8;
+            color: #2753ff;
+            box-shadow: #2753ff 0px 2px 0px;
+        }
+
+
+    </style>
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="20">
+        
+        <!--Navbar Start-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top navdar-custom py-3" id="navbar">
+            <div class="container">
+                <!-- LOGO -->
+                <a class="navbar-brand logo" href="#">
+                    <img src="assets/Images/logo-dark.png" alt="" class="logo-dark" height="28" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto navbar-center" id="navbar-navlist">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#features" class="nav-link">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pricing" class="nav-link">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#team" class="nav-link">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#blog" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                    <a href="" class="btn btn-primary btn-sm rounded-pill nav-btn ms-lg-3 px-3 py-2">Buy Now</a>
+                </div>
+            </div>
+            <!-- end container -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Hero Start -->
+        <section class="hero-6 bg-center position-relative overflow-hidden mt-5 pt-5" style="background-image: url(assets/Images/pattern-bg.png);" id="home">
+            <div class="container">
+                <div class="row align-items-center mt-5">
+                    <div class="col-lg-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #2753ff;" class="my-4"><path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="2" x2="12" y2="9"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="8 6 12 2 16 6"></polyline></svg>
+                        <h1 class="fw-medium mb-4 hero-6-title lh-base">Get Your Professional Website Done With <b>Qexal</b></h1>
+                        <p class="mb-5 text-muted lh-lg fw-normal" style="font-size: .95rem;">Create your profile today and let your story unfold. Whether you're showcasing your professional achievements or sharing personal passions, ProfileBuilder is your canvas.</p>
+                        <a href="#" class="btn btn-primary me-2 rounded-1 fs-6 fw-semibold px-4 py-2" style="font-size: .9rem;">Get Started <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right icon-xs ms-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                    </div>
+                    <div class="col-lg-6 col-sm-10 mx-auto ms-lg-auto me-lg-0">
+                        <div class="mt-lg-0 mt-5">
+                            <img src="assets/Images/hero.png" alt="" class="img-xl-responsive" style="width:45rem;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero End -->
+
+        <!-- Services start -->
+        <section class="section my-5" id="services">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-7 text-center">
+                        <h2 class="fw-bold">Our Services</h2>
+                        <p class="text-muted lh-base" style="font-size: .95rem;">Unveil your true potential without hesitation. Discover the essence of seamless profile creation with Qexal.</p>
+                    </div>
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="service-box text-center px-4 py-5 position-relative mb-4">
+                            <div class="service-box-content p-4">
+                                <div class="icon-mono service-icon avatar-md mx-auto mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                                </div>
+                                <h4 class="mb-3 fw-semibold" style="font-size: 1.1rem;">Digital Design</h4>
+                                <p class="text-muted mb-0" style="font-size: .95rem;">Our platform empowers you to craft profiles that captivate and inspire.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-lg-4">
+                        <div class="service-box text-center px-4 py-5 position-relative mb-4 active">
+                            <div class="service-box-content p-4">
+                                <div class="icon-mono service-icon avatar-md mx-auto mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                </div>
+                                <h4 class="mb-3 fw-semibold" style="font-size: 1.1rem;">Awesome Support</h4>
+                                <p class="text-muted mb-0" style="font-size: .95rem;">Join a community where every detail is meticulously designed to showcase your uniqueness.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-lg-4">
+                        <div class="service-box text-center px-4 py-5 position-relative mb-4">
+                            <div class="service-box-content p-4">
+                                <div class="icon-mono service-icon avatar-md mx-auto mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-server"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                                </div>
+                                <h4 class="mb-3 fw-semibold" style="font-size: 1.1rem;">Easy to customize</h4>
+                                <p class="text-muted mb-0" style="font-size: .95rem;">Start your journey with qexal today and experience innovation in personal branding.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+
+        </section>
+        <!-- Services end -->
+
+        <!-- Features start -->
+        <section class="section bg-light mt-5 py-5" id="features">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-7 text-center">
+                        <h2 class="fw-bold">Our Features</h2>
+                        <p class="text-muted lh-base" style="font-size: .95rem;">Embrace authenticity with qexal's robust tools. Showcase your unique journey with precision and integrity, ensuring every detail reflects your true self.</p>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+                <div class="row align-items-center my-5">
+                    <div class="col-md-5 order-2 order-md-1 mt-md-0 mt-5">
+                        <h2 class="mb-4 fw-semibold lh-base" style="font-size: 1.7rem;">Perfect Solution For Small Businesses</h2>
+                        <p class="text-muted mb-5" style="font-size: .95rem;">Achieve comprehensive coverage with ProfileBuilder's thorough profile creation process. From personal achievements to professional milestones, capture the entirety of your story seamlessly..</p>
+                        <a href="javascript: void(0);" class="btn btn-primary fw-semibold rounded-1 px-3 py-2" style="font-size: .9rem;">Find out more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right icon-xs ms-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-md-6 ms-md-auto order-1 order-md-2">
+                        <div class="position-relative">
+                            <div class="ms-5 features-img position-relative">
+                                <img src="assets/Images/desk1.jpg" alt="" class="img-fluid d-block mx-auto rounded shadow position-relative z-1" />
+                            </div>
+                            <img src="assets/Images/dot-img.png" alt="" class=" img-fluid d-block dot-img-left opacity-50 position-absolute mt-5 top-50 z-0" />
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div> 
+                <!-- end row -->
+                <div class="row align-items-center section pb-0 mt-5 pb-5">
+                    <div class="col-md-6">
+                        <div class="position-relative mb-md-0 mt-5 pb-5">
+                            <div class="me-5 features-img">
+                                <img src="assets/Images/desk2.jpg" alt="" class="img-fluid d-block mx-auto rounded shadow position-relative z-1"  />
+                            </div>
+                            <img src="assets/Images/dot-img.png" alt="" class="img-fluid d-block dot-img-right opacity-50 position-absolute mt-5 top-50 end-0 z-0" />
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-md-5 ms-md-auto">
+                        <h2 class="mb-4 fw-semibold lh-base" style="font-size: 1.7rem;">Build community & conversion with our suite of social tool</h2>
+                        <p class="text-muted mb-5" style="font-size: .95rem;">Innovate your narrative with ProfileBuilder's innovative approach. Harness cutting-edge technology to transform your profile into a compelling narrative that captivates and inspires..</p>
+                        <a href="javascript: void(0);" class="btn btn-primary fw-semibold rounded-1 px-3 py-2" style="font-size: .9rem;">Find out more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right icon-xs ms-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- Features end -->
+
+        <section class="section bg-gradient-primary position-relative p-5">
+            <div class="bg-overlay-img" style="background-image: url(assets/Images/demos.png);"></div>
+            <div class="container position-relative z-1">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center py-4">
+                            <h1 class="text-white mb-4 fw-bold" style="font-size: 2rem;">Build your dream website today</h1>
+                            <p class="text-white mb-5">Join a community where every voice is heard and every story cherished. Experience a platform where diversity thrives and connections flourish, embracing authenticity and shared experiences.</p>
+                            <a href="#" class="btn btn-lg btn-light rounded-0 text-primary fs-6 fw-semibold">Ask for Demonstration</a>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- Cta end -->
+
+        <!-- Pricing start -->
+        <section class="section my-5 py-5" id="pricing">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-7 text-center">
+                        <h2 class="fw-bold">Pricing Plan</h2>
+                        <p class="text-muted mt-2" style="font-size: .95rem;">Simple, flexible pricing for all your website needs. Choose the plan that fits you best and start building your online presence today!</p>
+                    </div>
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center mb-4 pricing-tab">
+                            <ul class="nav nav-pills rounded-pill justify-content-center d-inline-block shadow-sm" id="pricingpills-tab" role="tablist">
+                                <li class="nav-item d-inline-block">
+                                    <a class="nav-link rounded-pill fw-semibold active" style="font-size: .95rem;" id="pills-monthly-tab" data-bs-toggle="pill" href="#pills-monthly" role="tab" aria-controls="pills-monthly" aria-selected="true">Monthly</a>
+                                </li>
+                                <li class="nav-item d-inline-block">
+                                    <a class="nav-link rounded-pill fw-semibold" style="font-size: .95rem;" id="pills-yearly-tab" data-bs-toggle="pill" href="#pills-yearly" role="tab" aria-controls="pills-yearly" aria-selected="false">Yearly</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="pricingpills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-monthly" role="tabpanel" aria-labelledby="pills-monthly-tab">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="card plan-card mt-4 rounded text-center border-0 shadow overflow-hidden">
+                                            <div class="card-body px-4 py-5" style="font-size: .95rem;">
+                                                <div class="icon-mono avatar-md bg-soft-primary rounded mx-auto mb-5 p-3">
+                                                    <img src="assets/Images/pricing/1.png" alt="" class="img-fluid d-block mx-auto" />
+                                                </div>
+                                                <h4 class="text-uppercase mb-4 pb-1 fw-semibold"  style="font-size:1.4rem;">Basic</h4>
+                                                <p class="text-muted">Onlinespace: <span class="fw-bold">50MB</span></p>
+                                                <p class="text-muted">Support: <span class="fw-bold">No</span></p>
+                                                <p class="text-muted mb-4 pb-1">Domain 1</p>
+                                                <p class="text-muted mb-1">All Extension Included</p>
+                                                <p class="fw-semibold mb-4 price-tag">$9.00 / Month</p>
+                                                <a href="javascript: void(0);" class="btn rounded-1 px-4 py-2 fw-semibold price-btn" style="font-size: .90rem;">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end col -->
+                                    <div class="col-lg-4">
+                                        <div class="card plan-card mt-4 rounded text-center border-0 shadow overflow-hidden">
+                                            <div class="card-body px-4 py-5 position-relative" style="font-size: .95rem;">
+                                                <span class="badge text-bg-primary rounded-0 shadow-lg popularity-badge">Most Popular</span>
+                                                <div class="icon-mono avatar-md bg-soft-primary rounded mx-auto mb-5 p-3">
+                                                    <img src="assets/Images/pricing/2.png" alt="" class="img-fluid d-block mx-auto" />
+                                                </div>
+                                                <h4 class="text-uppercase mb-4 pb-1 fw-semibold" style="font-size:1.4rem;">Standard</h4>
+                                                <p class="text-muted">Onlinespace: <span class="fw-bold">100MB</span></p>
+                                                <p class="text-muted">Support: <span class="fw-bold">Yes</span></p>
+                                                <p class="text-muted mb-4 pb-1">Domain 1</p>
+                                                <p class="text-muted mb-1">All Extension Included</p>
+                                                <p class="fw-semibold mb-4 price-tag">$39.00 / Month</p>
+                                                <a href="javascript: void(0);" class="btn btn-primary rounded-1 fw-semibold px-4 py-2" style="font-size: .90rem;">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end col -->
+                                    <div class="col-lg-4">
+                                        <div class="card plan-card mt-4 rounded text-center border-0 shadow overflow-hidden">
+                                            <div class="card-body px-4 py-5" style="font-size: .95rem;">
+                                                <div class="icon-mono avatar-md bg-soft-primary rounded mx-auto mb-5 p-3">
+                                                    <img src="assets/Images/pricing/3.png" alt="" class="img-fluid d-block mx-auto" />
+                                                </div>
+                                                <h4 class="text-uppercase mb-4 pb-1 fw-semibold" style="font-size:1.4rem;">Premium</h4>
+                                                <p class="text-muted">Onlinespace: <span class="fw-bold">200MB</span></p>
+                                                <p class="text-muted">Support: <span class="fw-bold">No</span></p>
+                                                <p class="text-muted mb-4 pb-1">Domain 1</p>
+                                                <p class="text-muted mb-1">All Extension Included</p>
+                                                <p class="fw-semibold mb-4 price-tag">$79.00 / Month</p>
+                                                <a href="javascript: void(0);" class="btn rounded-1 px-4 py-2 fw-semibold price-btn" style="font-size: .90rem;">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end col -->
+                                </div>
+                                <!-- end row -->
+                            </div>
+                            <!-- end monthly tab pane -->
+
+                            <div class="tab-pane fade" id="pills-yearly" role="tabpanel" aria-labelledby="pills-yearly-tab">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="card plan-card mt-4 rounded text-center border-0 shadow overflow-hidden">
+                                            <div class="card-body px-4 py-5" style="font-size: .95rem;">
+                                                <div class="icon-mono avatar-md bg-soft-primary rounded mx-auto mb-5 p-3">
+                                                    <img src="assets/Images/pricing/1.png" alt="" class="img-fluid d-block mx-auto" />
+                                                </div>
+                                                <h4 class="text-uppercase mb-4 pb-1 fw-semibold" style="font-size:1.4rem;">Basic</h4>
+                                                <p class="text-muted">Onlinespace: <span class="fw-bold">50MB</span></p>
+                                                <p class="text-muted">Support: <span class="fw-bold">No</span></p>
+                                                <p class="text-muted mb-4 pb-1">Domain 1</p>
+                                                <p class="text-muted mb-1">All Extension Included</p>
+                                                <p class="fw-semibold mb-4 price-tag">$29.00 / Year</p>
+                                                <a href="javascript: void(0);" class="btn px-4 py-2 fw-semibold price-btn" style="font-size: .90rem;">Buy Now</a>
+                                            </div>
+                                            <!-- end cardbody -->
+                                        </div>
+                                        <!-- end card -->
+                                    </div>
+                                    <!-- end col -->
+                                    <div class="col-lg-4">
+                                        <div class="card plan-card mt-4 rounded text-center border-0 shadow overflow-hidden">
+                                            <div class="card-body px-4 py-5" style="font-size: .95rem;">
+                                                <div class="icon-mono avatar-md bg-soft-primary rounded mx-auto mb-5 p-3">
+                                                    <img src="assets/Images/pricing/2.png" alt="" class="img-fluid d-block mx-auto" />
+                                                </div>
+                                                <h4 class="text-uppercase mb-4 pb-1 fw-semibold" style="font-size:1.4rem;">Standard</h4>
+                                                <p class="text-muted">Onlinespace: <span class="fw-bold">100MB</span></p>
+                                                <p class="text-muted">Support: <span class="fw-bold">Yes</span></p>
+                                                <p class="text-muted mb-4 pb-1">Domain 1</p>
+                                                <p class="text-muted mb-1">All Extension Included</p>
+                                                <p class="fw-semibold mb-4 price-tag">$49.00 / Year</p>
+                                                <a href="javascript: void(0);" class="btn px-4 py-2 fw-semibold price-btn" style="font-size: .90rem;">Buy Now</a>
+                                            </div>
+                                            <!-- end cardbody -->
+                                        </div>
+                                        <!-- end card -->
+                                    </div>
+                                    <!-- end col -->
+                                    <div class="col-lg-4">
+                                        <div class="card plan-card mt-4 rounded text-center border-0 shadow overflow-hidden">
+                                            <div class="card-body px-4 py-5 position-relative" style="font-size: .95rem;">
+                                                <span class="badge text-bg-primary rounded-0 shadow-lg popularity-badge">Most Popular</span>
+                                                <div class="icon-mono avatar-md bg-soft-primary rounded mx-auto mb-5 p-3">
+                                                    <img src="assets/Images/pricing/3.png" alt="" class="img-fluid d-block mx-auto" />
+                                                </div>
+                                                <h4 class="text-uppercase mb-4 pb-1 fw-semibold" style="font-size:1.4rem;">Premium</h4>
+                                                <p class="text-muted">Onlinespace: <span class="fw-bold">200MB</span></p>
+                                                <p class="text-muted">Support: <span class="fw-bold">No</span></p>
+                                                <p class="text-muted mb-4 pb-1">Domain 1</p>
+                                                <p class="text-muted mb-1">All Extension Included</p>
+                                                <p class="fw-semibold mb-4 price-tag">$99.00 / Year</p>
+                                                <a href="javascript: void(0);" class="btn btn-primary rounded-1 px-4 py-2 fw-semibold" style="font-size: .90rem;">Buy Now</a>
+                                            </div>
+                                            <!-- end cardbody -->
+                                        </div>
+                                        <!-- end card -->
+                                    </div>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- end yearly tab pane -->
+                        </div>
+                        <!-- end tab content -->
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- Pricing end -->
+
+        <!-- Team start -->
+        <section class="section bg-light" id="team">
+            <div class="container py-5">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-7 text-center">
+                        <h2 class="fw-bold">Our Team Members</h2>
+                        <p class="text-muted">From expert developers to creative designers and helpful support staff, we're here to ensure your success every step of the way.</p>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+                <div class="row mb-3">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="team-box mt-4 position-relative overflow-hidden rounded text-center shadow">
+                            <div class="position-relative overflow-hidden team-members">
+                                <img src="assets/Images/team/1.jpg" alt="" class="img-fluid d-block mx-auto" />
+                                <ul class="list-inline p-3 mb-0 team-social-item w-100 position-absolute">
+                                    <li class="list-inline-item mx-3">
+                                        <a href="javascript: void(0);" class="team-social-icon h-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook icon-sm"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                                    </li>
+                                    <li class="list-inline-item mx-3">
+                                        <a href="javascript: void(0);" class="team-social-icon h-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter icon-sm"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                                    </li>
+                                    <li class="list-inline-item mx-3">
+                                        <a href="javascript: void(0);" class="team-social-icon h-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icon-sm"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-4">
+                                <h5 class="fs-6 fw-semibold mb-1">Frances Thompson</h5>
+                                <p class="text-muted text-uppercase mb-0" style="font-size: .9rem;">Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="team-box mt-4 position-relative overflow-hidden rounded text-center shadow">
+                            <div class="position-relative overflow-hidden team-members">
+                                <img src="assets/Images/team/2.jpg" alt="" class="img-fluid d-block mx-auto" />
+                                <ul class="list-inline p-3 mb-0 team-social-item w-100 position-absolute">
+                                    <li class="list-inline-item mx-3">
+                                        <a href="javascript: void(0);" class="team-social-icon h-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook icon-sm"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                                    </li>
+                                    <li class="list-inline-item mx-3">
+                                        <a href="javascript: void(0);" class="team-social-icon h-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter icon-sm"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                                    </li>
+                                    <li class="list-inline-item mx-3">
+                                        <a href="javascript: void(0);" class="team-social-icon h-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icon-sm"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-4">
+                                <h5 class="fs-6 fw-semibold mb-1">John Jones</h5>
+                                <p class="text-muted text-uppercase mb-0" style="font-size: .9rem;">Ceo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="team-box mt-4 position-relative overflow-hidden rounded text-center shadow">
+                            <div class="position-relative overflow-hidden team-members">
+                                <img src="assets/Images/team/3.jpg" alt="" class="img-fluid d-block mx-auto" />
+                                <ul class="list-inline p-3 mb-0 team-social-item w-100 position-absolute">
+                                    <li class="list-inline-item mx-3">
+                                        <a href="javascript: void(0);" class="team-social-icon h-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook icon-sm"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                                    </li>
+                                    <li class="list-inline-item mx-3">
+                                        <a href="javascript: void(0);" class="team-social-icon h-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter icon-sm"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                                    </li>
+                                    <li class="list-inline-item mx-3">
+                                        <a href="javascript: void(0);" class="team-social-icon h-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icon-sm"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-4">
+                                <h5 class="fs-6 fw-semibold mb-1">Della Hobbs</h5>
+                                <p class="text-muted text-uppercase mb-0" style="font-size: .9rem;">Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="team-box mt-4 position-relative overflow-hidden rounded text-center shadow">
+                            <div class="position-relative overflow-hidden team-members">
+                                <img src="assets/Images/team/4.jpg" alt="" class="img-fluid d-block mx-auto" />
+                                <ul class="list-inline p-3 mb-0 team-social-item w-100 position-absolute">
+                                    <li class="list-inline-item mx-3">
+                                        <a href="javascript: void(0);" class="team-social-icon h-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook icon-sm"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                                    </li>
+                                    <li class="list-inline-item mx-3">
+                                        <a href="javascript: void(0);" class="team-social-icon h-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter icon-sm"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                                    </li>
+                                    <li class="list-inline-item mx-3">
+                                        <a href="javascript: void(0);" class="team-social-icon h-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icon-sm"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-4">
+                                <h5 class="fs-6 fw-semibold mb-1">Troy Jordon</h5>
+                                <p class="text-muted text-uppercase mb-0" style="font-size: .9rem;">Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- Team end -->
+
+        <!-- Blog start -->
+        <section class="section" id="blog">
+            <div class="container my-4 py-5">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-lg-7 text-center">
+                        <h2 class="fw-bold mb-4">Our Blog</h2>
+                        <p class="text-muted" style="font-size: .95rem;">Your go-to resource for insights on building stunning websites. Stay updated with the latest trends and success stories to inspire your online journey.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card mt-4 border-0 shadow">
+                            <div class="card-body p-4">
+                                <span class="blog-badge badge rounded-3">UI & UX Design</span>
+                                <h4 class="font-size-22 my-4"><a href="javascript: void(0);">Step bt step to conduct usability testing</a></h4>
+                                <p class="text-muted" style="font-size: .9rem;">Learn the essential steps to effectively conduct usability testing and enhance your UI/UX design process.</p>
+                                <div class="d-flex align-items-center mt-4 pt-2">
+                                    <img src="assets/Images/user/img-1.jpg" style="width: 3rem;" class="rounded-circle avatar-sm me-3" alt="..." />
+                                    <div class="flex-body">
+                                        <h5 class="mb-0 fw-semibold" style="font-size: 1rem;">John Yeager</h5>
+                                        <p class="text-muted mb-0" style="font-size: .9rem;">Designer, New York</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-lg-4">
+                        <div class="card mt-4 border-0 shadow">
+                            <div class="card-body p-4">
+                                <span class="blog-badge badge rounded-3">CEO</span>
+                                <h4 class="font-size-22 my-4"><a href="javascript: void(0);">Increase conversion rate from ad to landing page</a></h4>
+                                <p class="text-muted" style="font-size: .9rem;">Discover proven strategies to boost your conversion rate from ad clicks to landing page engagement.</p>
+                                <div class="d-flex align-items-center mt-4 pt-2">
+                                    <img src="assets/Images/user/img-2.jpg" style="width: 3rem;" class="rounded-circle avatar-sm me-3" alt="..." />
+                                    <div class="flex-body">
+                                        <h5 class="mb-0 fw-semibold" style="font-size: 1rem;">Berneice Harris</h5>
+                                        <p class="text-muted mb-0" style="font-size: .9rem;">Designer, New York</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-lg-4">
+                        <div class="card mt-4 border-0 shadow">
+                            <div class="card-body p-4">
+                                <span class="blog-badge badge rounded-3">Developer</span>
+                                <h4 class="font-size-22 my-4"><a href="javascript: void(0);">Why small business should start marketing</a></h4>
+                                <p class="text-muted" style="font-size: .9rem;">All businesses must embrace marketing to drive growth and stay competitive in today's market.</p>
+                                <div class="d-flex align-items-center mt-4 pt-2">
+                                    <img src="assets/Images/user/img-3.jpg" style="width: 3rem;" class="rounded-circle avatar-sm me-3" alt="..." />
+                                    <div class="flex-body">
+                                        <h5 class="mb-0 fw-semibold" style="font-size: 1rem;">Sarah Pettway</h5>
+                                        <p class="text-muted mb-0" style="font-size: .9rem;">Designer, New York</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- Blog end -->
+
+        <!-- CTA start -->
+        <section class="section p-5 bg-center w-100 bg-light" style="background-image: url(assets/Images/cta-bg.png);background-size: cover;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card bg-gradient-primary text-center border-0 my-5">
+                            <div class="bg-overlay-img" style="background-image: url(assets/Images/demos.png);"></div>
+                            <div class="card-body mx-auto p-sm-5 p-4 z-1">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10">
+                                        <div class="p-3">
+                                            <h2 class="text-white mb-4 fw-semibold" style="font-size: 1.8rem;">Join our Growing Community</h2>
+                                            <p class="text-white mb-4 pb-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                            <a href="javascript: void(0);" class="btn btn-light rounded-pill px-4 py-2 fw-semibold text-primary" style="font-size: .95rem;">Sign Up for free</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- CTA end -->
+
+        <!-- Contact us start -->
+        <section class="section my-5 p-5" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-4">Get in Touch</h2>
+                        <p class="text-muted mb-5" style="font-size: .9rem;">Have questions or need assistance? Get in touch with us—we're here to help you every step of the way!</p>
+                       
+                        <div>
+                            <form method="post" name="myForm" onsubmit="return validateForm()" style="font-size: .9rem;">
+                                <p id="error-msg"></p>
+                                <div id="simple-msg"></div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label for="name" class="text-muted form-label">Name</label>
+                                            <input name="name" id="name" type="text" class="form-control py-2 bg-body-tertiary text-black-50" placeholder="Enter name*" style="font-size: .9rem;" >
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label for="email" class="text-muted form-label">Email</label>
+                                            <input name="email" id="email" type="email" class="form-control py-2 bg-body-tertiary text-black-50" placeholder="Enter email*" style="font-size: .9rem;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-4">
+                                            <label for="subject" class="text-muted form-label">Subject</label>
+                                            <input type="text" class="form-control py-2 bg-body-tertiary text-black-50" id="subject" name="subject" placeholder="Enter Subject.." style="font-size: .9rem;" />
+                                        </div>
+    
+                                        <div class="mb-4 pb-2">
+                                            <label for="comments" class="text-muted form-label">Message</label>
+                                            <textarea name="comments" id="comments" rows="4" class="form-control py-2 bg-body-tertiary text-black-50" placeholder="Enter message..." style="font-size: .9rem;"></textarea>
+                                        </div>
+    
+                                        <button type="submit" id="submit" name="send" class="btn btn-primary px-5 py-3 rounded-1 fw-semibold" style="font-size: .85rem;">Send Message</button>
+                                        
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-lg-5 ms-lg-auto">
+                        <div class="mt-5 mt-lg-0" style="font-size: .9rem">
+                            <img src="assets/Images/support-bench.png" alt="" class="img-fluid d-block" />
+                            <p class="text-muted mt-5 mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>  Support@info.com</p>
+                            <p class="text-muted mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>  +91 123 4556 789</p>
+                            <p class="text-muted mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>  2976 Edwards Street Rocky Mount, NC 27804</p>
+                            <ul class="list-inline pt-4">
+                                <li class="list-inline-item me-3">
+                                    <a href="javascript: void(0);" class="social-icon icon-mono avatar-xs rounded-circle p-2 bg-body-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#212529bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook icon-xs"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                                </li>
+                                <li class="list-inline-item me-3">
+                                    <a href="javascript: void(0);" class="social-icon icon-mono avatar-xs rounded-circle p-2 bg-body-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#212529bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter icon-xs"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="javascript: void(0);" class="social-icon icon-mono avatar-xs rounded-circle p-2 bg-body-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#212529bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icon-xs"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- Contact us end -->
+
+        <!-- Footer Start -->
+        <footer class="footer" style="background-color: #29344a;">
+            <div class="container bg-image" style="background-image: url(assets/Images/dotted-world.png);background-size: cover;">
+                <div class="row my-4 py-5">
+                    <div class="col-lg-4">
+                        <div class="mb-4">
+                            <a href="#"><img src="assets/Images/logo-light.png" alt="" class="" height="30" /></a>
+                            <p class="text-white-50 my-4" style="font-size: .9rem;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti.</p>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col-lg-7 ms-lg-auto">
+                        <div class="row">
+                            <div class="col-lg-3 col-6">
+                                <div class="mt-4 mt-lg-0">
+                                    <h4 class="text-white fw-semibold mb-3" style="font-size: 1rem;">Customer</h4>
+                                    <ul class="list-unstyled footer-sub-menu text-white-50" style="font-size: .9rem;">
+                                        <li><a href="javascript: void(0);" class="footer-link">Works</a></li>
+                                        <li><a href="javascript: void(0);" class="footer-link">Strategy</a></li>
+                                        <li><a href="javascript: void(0);" class="footer-link">Releases</a></li>
+                                        <li><a href="javascript: void(0);" class="footer-link">Press</a></li>
+                                        <li><a href="javascript: void(0);" class="footer-link">Mission</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="mt-4 mt-lg-0">
+                                    <h4 class="text-white fw-semibold mb-3" style="font-size: 1rem;">Product</h4>
+                                    <ul class="list-unstyled footer-sub-menu text-white-50" style="font-size: .9rem;">
+                                        <li><a href="javascript: void(0);" class="footer-link">Trending</a></li>
+                                        <li><a href="javascript: void(0);" class="footer-link">Popular</a></li>
+                                        <li><a href="javascript: void(0);" class="footer-link">Customers</a></li>
+                                        <li><a href="javascript: void(0);" class="footer-link">Features</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="mt-4 mt-lg-0">
+                                    <h4 class="text-white fw-semibold mb-3" style="font-size: 1rem;">Information</h4>
+                                    <ul class="list-unstyled footer-sub-menu text-white-50" style="font-size: .9rem;">
+                                        <li><a href="javascript: void(0);" class="footer-link">Developers</a></li>
+                                        <li><a href="javascript: void(0);" class="footer-link">Support</a></li>
+                                        <li><a href="javascript: void(0);" class="footer-link">Customer Service</a></li>
+                                        <li><a href="javascript: void(0);" class="footer-link">Get Started</a></li>
+                                        <li><a href="javascript: void(0);" class="footer-link">Guide</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="mt-4 mt-lg-0">
+                                    <h4 class="text-white fw-semibold mb-3" style="font-size: 1rem;">Support</h4>
+                                    <ul class="list-unstyled footer-sub-menu text-white-50" style="font-size: .9rem;">
+                                        <li><a href="javascript: void(0);" class="footer-link">FAQ</a></li>
+                                        <li><a href="javascript: void(0);" class="footer-link">Contact</a></li>
+                                        <li><a href="javascript: void(0);" class="footer-link">Disscusion</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center mt-1">
+                            <p class="text-white-50 mb-4" style="font-size: .8rem;">
+                                <script>
+                                document.write(new Date().getFullYear())
+                            </script> © Qexal. Design By Srithar</p>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+
+            </div>
+            <!-- end container -->
+        </footer>
+        <!-- Footer End -->
+
+        <!-- javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
