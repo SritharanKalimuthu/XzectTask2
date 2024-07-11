@@ -57,6 +57,10 @@
             z-index: 0;
         }
 
+        .features-img>img{
+            max-width: 30rem;
+        }
+
         .popularity-badge{
             background-color: red;
             rotate: 45deg;
@@ -105,17 +109,17 @@
     <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="20">
         
         <!--Navbar Start-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top navdar-custom py-3" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3" id="navbar">
             <div class="container">
                 <!-- LOGO -->
-                <a class="navbar-brand logo" href="#">
-                    <img src="assets/Images/logo-dark.png" alt="" class="logo-dark" height="28" />
+                <a class="navbar-brand" href="#">
+                    <img src="assets/Images/logo-dark.png" alt="Logo" height="28" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ms-auto navbar-center" id="navbar-navlist">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a href="#home" class="nav-link">Home</a>
                         </li>
@@ -138,26 +142,40 @@
                             <a href="#contact" class="nav-link">Contact Us</a>
                         </li>
                     </ul>
-                    <a href="" class="btn btn-primary btn-sm rounded-pill nav-btn ms-lg-3 px-3 py-2">Buy Now</a>
+                    <a href="#" class="btn btn-primary btn-sm rounded-pill ms-lg-3">Buy Now</a>
                 </div>
             </div>
-            <!-- end container -->
         </nav>
         <!-- Navbar End -->
-
+    
         <!-- Hero Start -->
-        <section class="hero-6 bg-center position-relative overflow-hidden mt-5 pt-5" style="background-image: url(assets/Images/pattern-bg.png);" id="home">
+        <section class="hero bg-center position-relative overflow-hidden mt-5 pt-5" style="background-image: url('assets/Images/pattern-bg.png');" id="home">
             <div class="container">
-                <div class="row align-items-center mt-5">
+                <div class="row align-items-center mt-5 pt-3">
                     <div class="col-lg-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #2753ff;" class="my-4"><path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="2" x2="12" y2="9"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="8 6 12 2 16 6"></polyline></svg>
-                        <h1 class="fw-medium mb-4 hero-6-title lh-base">Get Your Professional Website Done With <b>Qexal</b></h1>
-                        <p class="mb-5 text-muted lh-lg fw-normal" style="font-size: .95rem;">Create your profile today and let your story unfold. Whether you're showcasing your professional achievements or sharing personal passions, ProfileBuilder is your canvas.</p>
-                        <a href="#" class="btn btn-primary me-2 rounded-1 fs-6 fw-semibold px-4 py-2" style="font-size: .9rem;">Get Started <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right icon-xs ms-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #2753ff;" class="my-4">
+                            <path d="M17 18a5 5 0 0 0-10 0"></path>
+                            <line x1="12" y1="2" x2="12" y2="9"></line>
+                            <line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line>
+                            <line x1="1" y1="18" x2="3" y2="18"></line>
+                            <line x1="21" y1="18" x2="23" y2="18"></line>
+                            <line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line>
+                            <line x1="23" y1="22" x2="1" y2="22"></line>
+                            <polyline points="8 6 12 2 16 6"></polyline>
+                        </svg>
+                        <h1 class="fw-medium mb-4 lh-base">Get Your Professional Website Done With <b>Qexal</b></h1>
+                        <p class="mb-5 text-muted lh-lg" style="font-size: .95rem;">Create your profile today and let your story unfold. Whether you're showcasing your professional achievements or sharing personal passions, ProfileBuilder is your canvas.</p>
+                        <a href="#" class="btn btn-primary me-2 rounded-1 fs-6 px-4 py-2" style="font-size: .9rem;">
+                            Get Started 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right icon-xs ms-2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
                     </div>
                     <div class="col-lg-6 col-sm-10 mx-auto ms-lg-auto me-lg-0">
-                        <div class="mt-lg-0 mt-5">
-                            <img src="assets/Images/hero.png" alt="" class="img-xl-responsive" style="width:45rem;" />
+                        <div class="mt-5 img-fluid">
+                            <img src="assets/Images/hero.png" alt="Hero Image" style="width: 50rem;"/>
                         </div>
                     </div>
                 </div>
@@ -209,7 +227,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-server"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
                                 </div>
                                 <h4 class="mb-3 fw-semibold" style="font-size: 1.1rem;">Easy to customize</h4>
-                                <p class="text-muted mb-0" style="font-size: .95rem;">Start your journey with qexal today and experience innovation in personal branding.</p>
+                                <p class="text-muted mb-0" style="font-size: .95rem;">Start your journey with Qexal today and experience innovation in personal branding.</p>
                             </div>
                         </div>
                     </div>
@@ -218,7 +236,6 @@
                 <!-- end row -->
             </div>
             <!-- end container -->
-
         </section>
         <!-- Services end -->
 
@@ -228,43 +245,55 @@
                 <div class="row justify-content-center mb-5">
                     <div class="col-lg-7 text-center">
                         <h2 class="fw-bold">Our Features</h2>
-                        <p class="text-muted lh-base" style="font-size: .95rem;">Embrace authenticity with qexal's robust tools. Showcase your unique journey with precision and integrity, ensuring every detail reflects your true self.</p>
+                        <p class="text-muted lh-base" style="font-size: .95rem;">Embrace authenticity with Qexal's robust tools. Showcase your unique journey with precision and integrity, ensuring every detail reflects your true self.</p>
                     </div>
                     <!-- end col -->
                 </div>
                 <!-- end row -->
-                <div class="row align-items-center my-5">
-                    <div class="col-md-5 order-2 order-md-1 mt-md-0 mt-5">
+                <div class="d-flex flex-column-reverse flex-lg-row align-items-center my-5">
+                    <div class=" mt-md-0 mt-5">
                         <h2 class="mb-4 fw-semibold lh-base" style="font-size: 1.7rem;">Perfect Solution For Small Businesses</h2>
-                        <p class="text-muted mb-5" style="font-size: .95rem;">Achieve comprehensive coverage with ProfileBuilder's thorough profile creation process. From personal achievements to professional milestones, capture the entirety of your story seamlessly..</p>
-                        <a href="javascript: void(0);" class="btn btn-primary fw-semibold rounded-1 px-3 py-2" style="font-size: .9rem;">Find out more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right icon-xs ms-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        <p class="text-muted mb-5" style="font-size: .95rem;">Achieve comprehensive coverage with ProfileBuilder's thorough profile creation process. From personal achievements to professional milestones, capture the entirety of your story seamlessly.</p>
+                        <a href="javascript:void(0);" class="btn btn-primary fw-semibold rounded-1 px-3 py-2" style="font-size: .9rem;">
+                            Find out more
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right icon-xs ms-2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
                     </div>
                     <!-- end col -->
-                    <div class="col-md-6 ms-md-auto order-1 order-md-2">
+                    <div class="ms-lg-auto">
                         <div class="position-relative">
-                            <div class="ms-5 features-img position-relative">
-                                <img src="assets/Images/desk1.jpg" alt="" class="img-fluid d-block mx-auto rounded shadow position-relative z-1" />
+                            <div class="features-img position-relative">
+                                <img src="assets/Images/desk1.jpg" alt="" class=" img-fluid d-block mx-auto rounded shadow position-relative z-1" />
                             </div>
-                            <img src="assets/Images/dot-img.png" alt="" class=" img-fluid d-block dot-img-left opacity-50 position-absolute mt-5 top-50 z-0" />
+                            <img src="assets/Images/dot-img.png" alt="" class="img-fluid d-block dot-img-left opacity-50 position-absolute mt-5 top-50 z-0" />
                         </div>
                     </div>
                     <!-- end col -->
-                </div> 
+                </div>
                 <!-- end row -->
-                <div class="row align-items-center section pb-0 mt-5 pb-5">
-                    <div class="col-md-6">
-                        <div class="position-relative mb-md-0 mt-5 pb-5">
+                <div class="d-flex flex-column flex-lg-row align-items-center section pb-0 mt-5 pb-5">
+                    <div class=" mt-md-0 mt-5 pb-5">
+                        <div class="position-relative">
                             <div class="me-5 features-img">
-                                <img src="assets/Images/desk2.jpg" alt="" class="img-fluid d-block mx-auto rounded shadow position-relative z-1"  />
+                                <img src="assets/Images/desk2.jpg" alt="" class="img-fluid d-block mx-auto rounded shadow position-relative z-1" />
                             </div>
                             <img src="assets/Images/dot-img.png" alt="" class="img-fluid d-block dot-img-right opacity-50 position-absolute mt-5 top-50 end-0 z-0" />
                         </div>
                     </div>
                     <!-- end col -->
-                    <div class="col-md-5 ms-md-auto">
-                        <h2 class="mb-4 fw-semibold lh-base" style="font-size: 1.7rem;">Build community & conversion with our suite of social tool</h2>
-                        <p class="text-muted mb-5" style="font-size: .95rem;">Innovate your narrative with ProfileBuilder's innovative approach. Harness cutting-edge technology to transform your profile into a compelling narrative that captivates and inspires..</p>
-                        <a href="javascript: void(0);" class="btn btn-primary fw-semibold rounded-1 px-3 py-2" style="font-size: .9rem;">Find out more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right icon-xs ms-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                    <div class="w-lg-50 ms-md-auto order-1 order-md-2">
+                        <h2 class="mb-4 fw-semibold lh-base" style="font-size: 1.7rem;">Build community & conversion with our suite of social tools</h2>
+                        <p class="text-muted mb-5" style="font-size: .95rem;">Innovate your narrative with ProfileBuilder's innovative approach. Harness cutting-edge technology to transform your profile into a compelling narrative that captivates and inspires.</p>
+                        <a href="javascript:void(0);" class="btn btn-primary fw-semibold rounded-1 px-3 py-2" style="font-size: .9rem;">
+                            Find out more
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right icon-xs ms-2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
                     </div>
                     <!-- end col -->
                 </div>
@@ -273,6 +302,7 @@
             <!-- end container -->
         </section>
         <!-- Features end -->
+
 
         <section class="section bg-gradient-primary position-relative p-5">
             <div class="bg-overlay-img" style="background-image: url(assets/Images/demos.png);"></div>
